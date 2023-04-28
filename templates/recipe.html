@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Recipe Helper</title>
+</head>
+<body>
+    <h1>Ingredients:</h1>
+    <ul>
+        {% for ingredient, amount in recipe.items %}
+            <li>{{ ingredient }}: {{ amount }}g</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
